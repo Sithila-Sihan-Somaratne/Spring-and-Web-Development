@@ -1,0 +1,11 @@
+student:
+    institute : ICET-DEVELOP-TEAM
+
+spring :
+  datasource :
+    url : jdbc:mysql://localhost:3306/institute_crm?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 2010
+  jpa:
+    hibernate:
+      ddl-auto : create

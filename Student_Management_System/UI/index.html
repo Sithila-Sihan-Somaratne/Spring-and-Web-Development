@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Management System</title>
+        <!--
+            Below are the CSS file
+        -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/template.jpg);">
+        <div class="container">
+            <div class="column"></div>
+            <div class="column" id="second-column">
+                <h1>Student Management System</h1>
+                <br>
+                <h3>Enter Student Informations</h3>
+            <p>________________________________________</p>
+            <!--Here we upload the image of the student-->
+            <div class="upload_images">
+                <form name="pickfile">
+                    <input name="file" type="file" />
+                  </form>
+            </div>
+            <img style="display: block; margin-left: auto; margin-right: auto; width: 25%;" id="img" src="#" alt="student's image">
+            <br><br><br>
+            <!--
+                Here we got the student's form and the guardian's form 
+                (in this case they are inside two separate table).
+                The input's have got an id to be used with JavaScript.
+            -->
+            <table>
+                <tr>
+                    <!--Here, the &ThinSpace; is used to align the labels-->
+                    <td><label for="studentFullName">Full Name &ThinSpace; : </label></td>
+                    <td><input name="studentFullName" id="studentFullName" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="studentAddress">
+                            Address &ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="studentAddress" id="studentAddress" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="studentEmail">
+                            Email  &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="studentEmail" id="studentEmail" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="studentContact">
+                            Contact &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="studentContact" id="studentContact" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="studentSchool">
+                            School &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="studentSchool" id="studentSchool" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="studentGrade">
+                            Grade &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="studentGrade" id="studentGrade" type="text"></td>
+                </tr>
+            </table>
+            <h3>Enter Guardian Informations</h3>
+            <p>________________________________________</p>
+            <table>
+                <!--Here, the &ThinSpace; is used to align the labels-->
+                <tr>
+                    <td><label for="guardianFullName">Full Name &ThinSpace; : </label></td>
+                    <td><input name="guardianFullName" id="guardianFullName" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="guardianAddress">
+                            Address &ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="guardianAddress" id="guardianAddress" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="guardianEmail">
+                            Email  &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="guardianEmail" id="guardianEmail" type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="guardianContact">Contact &ThinSpace;&ThinSpace;&ThinSpace;
+                            &ThinSpace;&ThinSpace;&ThinSpace; : 
+                        </label>
+                    </td>
+                    <td><input name="guardianContact" id="guardianContact" type="text"></td>
+                </tr>
+            </table>
+            <br><br>
+            <div>
+                <!--
+                    Here we've got three buttons :
+                        (1) The Clear button is used to clear the text.
+                        (2) The Register button is used to be registered
+                        (3) The View button is used to see the table with 
+                            all the students' informations
+                -->
+                <!--
+                    The ids are used to style the buttons.
+                    The first two buttons have got their id 
+                    to be used in JavaScript when they are clicked.
+                -->
+                <button id="clear">Clear</button>
+                &ThickSpace;
+                <button id="register" onclick="register()">Register</button>
+                &ThickSpace;
+                <!--
+                    Here, the View button is used to open a new html file
+                    (in this case view.html) to show the table
+                -->
+                <button id="view"><a target="_blank" href="view.html">View</a></button>
+            </div>
+            </div>
+            <div class="column">
+                
+            </div>
+        </div>
+        <!--Here we link our JavaScript Files with a script tag-->
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

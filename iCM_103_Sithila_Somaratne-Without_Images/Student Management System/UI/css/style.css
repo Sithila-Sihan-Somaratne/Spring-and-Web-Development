@@ -1,0 +1,96 @@
+body{
+    background-color: #ffff00c8;
+}
+h1, h3, p{
+    text-align: center;
+}
+/*Below, from line 8 to line 14 is used to align table, table rows and data*/
+table, tr, td{
+    margin-left: auto;  
+    margin-right: auto;  
+    width: 500px;  
+    text-align: center;  
+    font-size: 20px;  
+}
+div {
+    text-align: center;
+}
+#clear{
+    background-color: #ff8c00;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+#clear:hover{
+    background-color: #9d5b0b;
+}
+#register{
+    background-color: #3ac03a;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+#register:hover{
+    background-color: #3b8e3b;
+}
+#view{
+    background-color: #fd4040;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+#view:hover{
+    background-color: #9c2626;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+#view-all-students{
+    align-items: center;
+    background-color: #1a4bec;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+#view-all-students:hover{
+    background-color: #17328b;
+}
+.upload_files {
+    width: 500px;
+    clear: both;
+}
+.upload_files input {
+    width: 100%;
+    clear: both;
+}
+/*The lines 68 and 72 are used to display the image after it has benn uploaded*/
+/*Below, I specified the type of the input, if we don't then it will affect all the inputs*/
+input[type='file'] { 
+    color: transparent;    
+    /*
+        The above line of code 
+        is used to cover the message "File not chosen" or the name of the file. 
+        This message is next to the button Choose... 
+        in the form where we upload the students image.
+    */
+}
+.Students-View{
+    width: 100%;
+    background-color: white;
+    border: 2px solid;
+}
+.hover:hover{
+    background-color: #a2accd;
+}
+.Information{
+    background-color: #52bb52;
+    grid-template-columns: repeat(2, 1fr);
+}
