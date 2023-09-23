@@ -2,7 +2,7 @@ let num1="";
 let num2="";           
 let num="";
 let operator="";                     
-btn0.addEventListener("click",()=>{
+btn0.addEventListener("click",()=>{ 
     num+="0";
     document.getElementById("display").innerHTML=num;
 });
